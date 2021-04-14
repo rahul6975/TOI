@@ -1,3 +1,73 @@
 <resources>
     <string name="app_name">TOI</string>
+    <string name="home">Home</string>
+    <string name="Saved_stories">Saved Stories</string>
+    <string name="Toi_news">TOI NEWS</string>
+    <string name="india">India</string>
+    <string name="politics">Politics NEWS</string>
+    <string name="entertainment">Entertainment (ETIMES)</string>
+    <string name="tech"> Tech (Gadgets Now)</string>
+    <string name="business"> Business </string>
+    <string name="world"> World </string>
+    <string name="sports"> Sports</string>
+    <string name="web_series"> Web Series (ETIMES)</string>
+    <string name="photos"> Photos (ETIMES)</string>
+    <string name="mumbai_city"> Mumbai City</string>
+    <string name="Times_Check"> Times Fact-Check</string>
+    <string name="Times_Top_10"> Times Top 10</string>
+    <string name="Opinions_features">Opinions and Features</string>
+    <string name="podcasts">Podcasts</string>
+    <string name="movie_review">Movie Reviews (ETIMES)</string>
+    <string name="tv">TV (ETIMES)</string>
+    <string name="lifestyle">Lifestyle (ETIMES)</string>
+    <string name="opinion">Opinion </string>
+    <string name="cricket">Cricket</string>
+    <string name="auto">Auto</string>
+    <string name="social">Social</string>
+    <string name="pageants">Pageants (ETIMES)</string>
+    <string name="gaming"> Gaming</string>
+    <string name="event"> Events</string>
+    <string name="humour"> Humour</string>
+    <string name="science"> Science</string>
+    <string name="education"> Education</string>
+    <string name="environment"> Environment</string>
+    <string name="infographics"> Infographics</string>
+    <string name="citizen_reporter"> Citizen Reporter</string>
+    <string name="good_governance"> Good Governance</string>
+    <string name="nri"> NRI</string>
+    <string name="campaign"> Campaign</string>
+    <string name="mediawire"> Mediawire</string>
+    <string name="Travel"> Travel</string>
+    <string name="food_recipe"> Food Recipes</string>
+    <string name="Femina">Femina </string>
+    <string name="In_focus">In Focus: Atheism </string>
+    <string name="notifications">Notifications</string>
+    <string name="change_language">Change Language</string>
+    <string name="search">Search</string>
+    <string name="setting">Setting</string>
+
+
+    <string name="top">Top</string>
+    <string name="Toi">TOI+</string>
+    <string name="videos">VIDEOS</string>
+    <string name="photos_capital">PHOTOS</string>
+    <string name="liveTv_capital">LIVE TV</string>
+    <string name="Assembly_election_capital">ASSEMBLY ELECTION</string>
+    <string name="IPL_2021_capital">IPL 2021 </string>
+    <string name="GadgetsNow">GADGETSNOW </string>
+    <string name="Trending">Trending</string>
+    <string name="latest">LATEST </string>
+
+
+    //rightToolbar
+    <string name="Toolbar_notification">Notifications </string>
+    <string name="Toolbar_change">Change Language </string>
+    <string name="Toolbar_search">Search </string>
+    <string name="Toolbar_setting">Setting </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
