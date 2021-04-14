@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/action_home"
-        android:enabled="true"
+        android:id="@+id/homeFragment"
         android:fontFamily="@font/dejavusans"
         android:icon="@drawable/home_icon"
         android:title="Home" />
     <item
-        android:id="@+id/city"
-        android:enabled="true"
+        android:id="@+id/cityFragment"
         android:fontFamily="@font/dejavusans"
         android:icon="@drawable/ic_locate"
         android:title="City" />
     <item
-        android:id="@+id/toi_plus"
-        android:enabled="true"
+        android:id="@+id/TOI_PlusFragment"
         android:fontFamily="@font/dejavusans"
         android:icon="@drawable/ic_plus_notification"
         android:title="TOI+" />
     <item
-        android:id="@+id/briefs"
-        android:enabled="true"
+        android:id="@+id/brief_Fragment"
         android:fontFamily="@font/dejavusans"
         android:icon="@drawable/ic_briefs"
         android:title="Briefs" />
     <item
-        android:id="@+id/my_feeds"
-        android:enabled="true"
+        android:id="@+id/myFeed_Fragment"
         android:fontFamily="@font/dejavusans"
         android:icon="@drawable/ic_my_feeds"
         android:title="My Feed" />

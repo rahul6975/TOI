@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/toolBar_Notification"
+        android:title="@string/Toolbar_notification" />
+    <item
+        android:id="@+id/toolbar_changeLanguage"
+        android:title="@string/Toolbar_change" />
+    <item
+        android:id="@+id/toolbar_search"
+        android:title="@string/Toolbar_search" />
+    <item
+        android:id="@+id/toolbar_setting"
+        android:title="@string/Toolbar_setting" />
+</menu>
