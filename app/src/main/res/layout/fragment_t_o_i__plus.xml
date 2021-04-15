@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".fragments.TOI_PlusFragment">
+    tools:context=".fragments.TOI_PlusFragment.TOI_PlusFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_TOI_PLUS_Fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        app:tabGravity="center"
+        app:tabMode="scrollable"
+        app:tabTextColor="#848484"
+        android:background="@android:color/transparent"
+        app:tabIndicatorColor="@color/red_color"
+        app:tabSelectedTextColor="@color/black"
+        app:tabIndicatorHeight="@dimen/dp_10"/>
 
-</FrameLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_of_TOI_PLUS_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+</LinearLayout>
