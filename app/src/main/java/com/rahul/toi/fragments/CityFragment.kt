@@ -1,16 +1,20 @@
 package com.rahul.toi.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.rahul.toi.R
 import com.rahul.toi.adapters.CityAdapter
+import com.rahul.toi.clickListeners.NewsClickListener
 import com.rahul.toi.interfaces.ApiService
 import com.rahul.toi.model.ResponseMainClass
 import com.rahul.toi.network.Network
+import com.rahul.toi.views.NewsDetails
 import kotlinx.android.synthetic.main.fragment_city.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -19,7 +23,7 @@ import retrofit2.Response
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class CityFragment : Fragment() {
+class CityFragment : Fragment(), NewsClickListener {
     var responseMainClass: List<ResponseMainClass> = arrayListOf()
     private var param1: String? = null
     private var param2: String? = null
@@ -31,6 +35,7 @@ class CityFragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -63,16 +68,24 @@ class CityFragment : Fragment() {
                 ) {
                     if (response.body() != null) {
                         responseMainClass = response.body()!!
-                        val adapter = CityAdapter(responseMainClass)
+                        val adapter = CityAdapter(responseMainClass, this@CityFragment)
                         val linearLayoutManager = LinearLayoutManager(context)
                         CityRV.layoutManager = linearLayoutManager
                         CityRV.adapter = adapter
                     }
                 }
+
                 override fun onFailure(call: Call<List<ResponseMainClass>>, t: Throwable) {
                 }
 
             })
+    }
+
+    override fun onClick(poisiton: Int) {
+        val intent = Intent(context, NewsDetails::class.java)
+        intent.putExtra("url", responseMainClass[poisiton].url)
+        startActivity(intent)
+
     }
 
 }

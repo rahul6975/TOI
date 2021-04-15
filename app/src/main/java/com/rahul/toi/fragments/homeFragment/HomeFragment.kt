@@ -22,9 +22,6 @@ class HomeFragment : Fragment() {
 
 
     }
-
-
-
 //
 //        val fragmentList = arrayListOf<Fragment>(
 //            home_Top_Fragment(),
@@ -49,11 +46,6 @@ class HomeFragment : Fragment() {
 
 
 
-
-
-
-
-
     class ViewPagerAdapter(list: ArrayList<Fragment>, fm: FragmentManager, lifecycle: Lifecycle) :
         FragmentStateAdapter(fm, lifecycle) {
 
@@ -69,6 +61,4 @@ class HomeFragment : Fragment() {
             return fragmentList[position]
         }
     }
-
-
 }
