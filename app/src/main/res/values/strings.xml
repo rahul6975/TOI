@@ -45,8 +45,6 @@
     <string name="change_language">Change Language</string>
     <string name="search">Search</string>
     <string name="setting">Setting</string>
-
-
     <string name="top">Top</string>
     <string name="Toi">TOI+</string>
     <string name="videos">VIDEOS</string>
@@ -57,16 +55,10 @@
     <string name="GadgetsNow">GADGETSNOW </string>
     <string name="Trending">Trending</string>
     <string name="latest">LATEST </string>
-
-
-    //rightToolbar
     <string name="Toolbar_notification">Notifications </string>
     <string name="Toolbar_change">Change Language </string>
     <string name="Toolbar_search">Search </string>
     <string name="Toolbar_setting">Setting </string>
-
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_saved_stories">SavedStoriesActivity</string>
     <!-- Strings used for fragments for navigation -->
