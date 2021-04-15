@@ -8,17 +8,21 @@
     tools:context=".fragments.homeFragment.HomeFragment">
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+        android:id="@+id/tabLayout_homeFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:padding="5dp"
         app:tabGravity="center"
         app:tabMode="scrollable"
+        app:tabTextColor="#848484"
         android:background="@android:color/transparent"
-        app:tabIndicatorHeight="0dp"/>
+        app:tabIndicatorColor="@color/red_color"
+        app:tabSelectedTextColor="@color/black"
+        app:tabIndicatorHeight="@dimen/dp_10"/>
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_of_HomeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

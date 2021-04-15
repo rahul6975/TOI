@@ -23,7 +23,7 @@ import com.rahul.toi.R
 import com.rahul.toi.fragments.Brief_Fragment
 import com.rahul.toi.fragments.CityFragment
 import com.rahul.toi.fragments.MyFeed_Fragment
-import com.rahul.toi.fragments.TOI_PlusFragment
+import com.rahul.toi.fragments.TOI_PlusFragment.TOI_PlusFragment
 import com.rahul.toi.fragments.homeFragment.HomeFragment
 import kotlinx.android.synthetic.main.activity_home_screen.*
 import kotlinx.android.synthetic.main.toolbar_layout.*

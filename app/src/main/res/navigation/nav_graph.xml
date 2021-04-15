@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/TOI_PlusFragment"
-        android:name="com.rahul.toi.fragments.TOI_PlusFragment"
+        android:name="com.rahul.toi.fragments.TOI_PlusFragment.TOI_PlusFragment"
         android:label="fragment_t_o_i__plus"
         tools:layout="@layout/fragment_t_o_i__plus" />
 
@@ -28,7 +28,6 @@
         android:name="com.rahul.toi.fragments.Brief_Fragment"
         android:label="fragment_brief_"
         tools:layout="@layout/fragment_brief_" />
-
 
     <fragment
         android:id="@+id/myFeed_Fragment"

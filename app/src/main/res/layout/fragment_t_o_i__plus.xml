@@ -1,31 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.TOI_PlusFragment">
+    android:orientation="vertical"
+    tools:context=".fragments.TOI_PlusFragment.TOI_PlusFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_TOI_PLUS_Fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:padding="5dp"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/red_color"
+        app:tabIndicatorHeight="@dimen/dp_10"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="#848484" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/TOI_PLUS_RV"
-            layout_constraintBottom_toBottomOf="parent"
-            layout_constraintTop_toTopOf="parent"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_of_TOI_PLUS_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-        <ProgressBar
-            android:id="@+id/PLUS_PB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/TOI_PLUS_RV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/PLUS_PB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
 
-</FrameLayout>
+</LinearLayout>

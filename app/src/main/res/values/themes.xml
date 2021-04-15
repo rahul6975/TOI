@@ -14,7 +14,6 @@
         <!-- Customize your theme here. -->
 
 
-
     </style>
 
 
@@ -24,7 +23,17 @@
     </style>
 
 
-    <style name="Theme.toi" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-    <style name="Theme.toi.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="Theme.toi" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.toi.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.TOI.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TOI.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TOI.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
