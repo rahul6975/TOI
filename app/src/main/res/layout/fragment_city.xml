@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.cityFragment.CityFragment">
+
 
 
     <com.google.android.material.tabs.TabLayout
@@ -30,23 +31,45 @@
         app:layout_constraintTop_toBottomOf="@+id/tabLayout_cityFragment"
         android:layout_height="match_parent">
 
-
-
-
-
     </androidx.viewpager.widget.ViewPager>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/CityRV"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+>>>>>>> 1212d7c790e5bd419fb277a73079658db7921e4c
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent">
 
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/CityRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ProgressBar
+            android:id="@+id/City_frag_PB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/CityRV" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<<<<<<< HEAD
 
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+</FrameLayout>
+>>>>>>> 1212d7c790e5bd419fb277a73079658db7921e4c
 

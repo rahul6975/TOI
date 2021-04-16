@@ -3,14 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/toolBar_Notification"
-        android:title="@string/Toolbar_notification" />
+        android:title="@string/Toolbar_notification"
+        app:showAsAction="never" />
     <item
         android:id="@+id/toolbar_changeLanguage"
-        android:title="@string/Toolbar_change" />
+        android:title="@string/Toolbar_change"
+        app:showAsAction="never" />
     <item
         android:id="@+id/toolbar_search"
-        android:title="@string/Toolbar_search" />
+        android:title="@string/Toolbar_search"
+        app:showAsAction="never" />
     <item
         android:id="@+id/toolbar_setting"
-        android:title="@string/Toolbar_setting" />
+        android:title="@string/Toolbar_setting"
+        app:showAsAction="never" />
 </menu>

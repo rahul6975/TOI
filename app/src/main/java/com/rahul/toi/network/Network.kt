@@ -8,14 +8,13 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class Network {
 
-
     companion object {
         private val httpLoggingInterceptor =
             HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
 
         fun getInstance(): Retrofit {
             return Retrofit.Builder()
-                .baseUrl("https://a926de8eafdb.ngrok.io")
+                .baseUrl("http://192.168.43.126:8080/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(OkHttpClient.Builder().addInterceptor(httpLoggingInterceptor).build())
                 .build()

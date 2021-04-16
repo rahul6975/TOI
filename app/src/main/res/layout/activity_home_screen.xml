@@ -40,6 +40,15 @@
                 android:layout_marginStart="@dimen/dp_20"
                 android:layout_marginTop="@dimen/dp_20"
                 android:src="@drawable/ic_menu" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_65"
+                android:layout_marginTop="@dimen/dp_25"
+                android:layout_toEndOf="@id/imgLogo"
+                android:src="@drawable/ic_more" />
+
         </RelativeLayout>
 
         <View
@@ -66,6 +75,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/bottom_nav_menu" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -74,7 +84,12 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
+<<<<<<< HEAD
         app:menu="@menu/activity_main_drawer"
         app:headerLayout="@layout/nav_header"/>
+=======
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/activity_main_drawer" />
+>>>>>>> 1212d7c790e5bd419fb277a73079658db7921e4c
 
 </androidx.drawerlayout.widget.DrawerLayout>

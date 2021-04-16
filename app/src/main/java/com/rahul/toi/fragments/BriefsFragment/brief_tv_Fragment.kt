@@ -14,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [brief_tv_Fragment.newInstance] factory method to
+ * Use the [brief_sports_Fragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class brief_tv_Fragment : Fragment() {
+class brief__tv_Fragmnet() : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -45,12 +45,12 @@ class brief_tv_Fragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment brief_tv_Fragment.
+         * @return A new instance of fragment brief_sports_Fragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            brief_tv_Fragment().apply {
+            brief_sports_Fragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
