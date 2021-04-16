@@ -1,10 +1,10 @@
-package com.rahul.toi
+package com.rahul.toi.views
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.rahul.toi.views.HomeScreen
+import com.rahul.toi.R
 
 class Splash_ScreenActivity : AppCompatActivity() {
 

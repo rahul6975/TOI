@@ -1,26 +1,9 @@
 package com.rahul.toi.views
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import android.widget.Switch
-import android.widget.Toast
-import androidx.appcompat.widget.Toolbar
-import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.fragment.app.Fragment
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.navigation.NavigationView
 import com.rahul.toi.R
-import com.rahul.toi.fragments.CityFragment
-import kotlinx.android.synthetic.main.activity_home_screen.*
-import kotlinx.android.synthetic.main.toolbar_layout.*
+import com.rahul.toi.fragments.cityFragment.CityFragment
 
 
 class HomeScreen : AppCompatActivity() {
@@ -42,7 +25,8 @@ class HomeScreen : AppCompatActivity() {
 
     private fun setHomescreenFragment() {
         val transaction = fragmentManager.beginTransaction()
-        val homescreenFragement = CityFragment()
+        val homescreenFragement =
+            CityFragment()
         transaction.add(R.id.flHomescreen, homescreenFragement, "homescreen").commit()
 //        setSupportActionBar(toolbar)
 //        navController = findNavController(R.id.navHostFragmentContainer)

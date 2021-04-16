@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.activity_nav__saved_stories_.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class NavSavedStoriesActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nav__saved_stories_)

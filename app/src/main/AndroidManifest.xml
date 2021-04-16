@@ -4,7 +4,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TOI">
+        <activity android:name=".harsh.liveTvActivity"></activity>
         <activity
             android:name=".Navigation_Drawer_Activity"
             android:label="@string/title_activity_navigation__drawer_"
@@ -22,9 +22,8 @@
             android:label="@string/title_activity_saved_stories"
             android:theme="@style/Theme.TOI.NoActionBar" />
         <activity android:name=".views.MainActivity" />
-        <activity android:name=".views.HomeScreen"/>
-            <activity android:name=".Splash_ScreenActivity">
-
+        <activity android:name=".views.HomeScreen" />
+        <activity android:name=".views.Splash_ScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

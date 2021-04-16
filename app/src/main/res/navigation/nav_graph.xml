@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/cityFragment"
-        android:name="com.rahul.toi.fragments.CityFragment"
+        android:name="com.rahul.toi.fragments.cityFragment.CityFragment"
         android:label="fragment_city"
         tools:layout="@layout/fragment_city" />
 
@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/brief_Fragment"
-        android:name="com.rahul.toi.fragments.Brief_Fragment"
+        android:name="com.rahul.toi.fragments.BriefsFragment.Brief_Fragment"
         android:label="fragment_brief_"
         tools:layout="@layout/fragment_brief_" />
 

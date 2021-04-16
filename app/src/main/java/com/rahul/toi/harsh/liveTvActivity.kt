@@ -1,16 +1,15 @@
-package com.rahul.toi.views
+package com.rahul.toi.harsh
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rahul.toi.R
 
-class MainActivity : AppCompatActivity() {
-
-
+class liveTvActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_live_tv)
+
+
+
     }
-
-
 }

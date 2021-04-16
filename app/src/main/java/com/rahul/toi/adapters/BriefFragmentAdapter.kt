@@ -1,97 +1,96 @@
 package com.rahul.toi.adapters
 
-import android.icu.text.CaseMap
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.rahul.toi.fragments.BriefsFragment.*
 import com.rahul.toi.fragments.homeFragment.*
 
-class HomeFragmentAdapter(supportFragmentAdapter: FragmentManager) : FragmentPagerAdapter(
+class BriefFragmentAdapter(supportFragmentAdapter: FragmentManager):FragmentPagerAdapter(
     supportFragmentAdapter,
     BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
 ) {
-
-
-
-
     override fun getItem(position: Int): Fragment {
+
         return when (position) {
             0 -> {
-                home_Top_Fragment()
+                brief_Featured_Fragment()
             }
             1 -> {
-                home_TOI_Fragment()
+                brief_India_Fragment()
             }
             2 -> {
-                home_Video_Fragment()
+                brief_sports_Fragment()
             }
             3 -> {
-                home_Photos_Fragment()
+                brief_entertainment_Fragment()
             }
             4 -> {
-                home_Live_Tv_Fragment()
+                brief_tv_Fragment()
             }
             5 -> {
-                home_assembly_election_Fragment()
+                brief_lifestyle_Fragment()
             }
             6 -> {
-                home_IPL_2021_Fragment()
+                brief_gadgets_Fragment()
             }
             7 -> {
-                home_GadgetsNow_Fragment()
+                brief_world_Fragment()
             }
             8 -> {
-                home_trending_Fragment()
-            }
-            9 -> {
-                home_latest_Fragment()
+                brief_business_Fragment()
             }
             else -> {
-                home_Top_Fragment()
+                brief_Featured_Fragment()
             }
         }
+
+
+
+
+
+
+
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
-        when (position) {
+
+        when(position){
             0 -> {
-                return "TOP"
+                return "FEATURED"
             }
             1 -> {
-                return "TOI+"
+                return "INDIA"
             }
             2 -> {
-                return "VIDEOS"
+                return "SPORTS"
             }
             3 -> {
-                return "PHOTOS"
+                return "ENTERTAINMENT"
             }
             4 -> {
-                return "LIVE TV"
+                return "TV"
             }
             5 -> {
-                return "ASSEMBLY ELECTION"
+                return "LIFESTYLE"
             }
             6 -> {
-                return "IPL 2021"
+                return "GADGETS"
             }
             7 -> {
-                return "GADGETSNOW"
+                return "WORLD"
             }
             8 -> {
-                return "TRENDING"
+                return "BUSINESS"
             }
-            9 -> {
-                return "LATEST"
-            }
+
         }
         return super.getPageTitle(position)
     }
 
     override fun getCount(): Int {
         return 9
+
+
     }
-
-
 }
-

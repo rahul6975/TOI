@@ -1,4 +1,4 @@
-package com.rahul.toi.fragments
+package com.rahul.toi.fragments.cityFragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,10 +8,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.rahul.toi.R
 import com.rahul.toi.adapters.CityAdapter
+import com.rahul.toi.adapters.CityFragmentAdapter
+import com.rahul.toi.adapters.HomeFragmentAdapter
 import com.rahul.toi.interfaces.ApiService
 import com.rahul.toi.model.ResponseMainClass
 import com.rahul.toi.network.Network
 import kotlinx.android.synthetic.main.fragment_city.*
+import kotlinx.android.synthetic.main.fragment_home.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -73,6 +76,16 @@ class CityFragment : Fragment() {
                 }
 
             })
+
+
+//for tabview//requireActivity().supportFragmentManager
+        viewPager_of_cityFragment.adapter =
+            CityFragmentAdapter(childFragmentManager)
+        tabLayout_cityFragment.setupWithViewPager(viewPager_of_cityFragment)
+
+
+
+
     }
 
 }
