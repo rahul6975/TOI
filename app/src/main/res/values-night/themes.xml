@@ -3,7 +3,7 @@
     <style name="Theme.TOI" parent="Theme.Design.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/red_color</item>
-        <item name="colorPrimaryVariant">@color/red_color</item>
+        <item name="colorPrimaryVariant">@color/white</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

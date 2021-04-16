@@ -3,9 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/CardView"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="@dimen/dp_5"
-    android:elevation="@dimen/dp_5">
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,9 +11,8 @@
 
         <ImageView
             android:id="@+id/cityImageView"
-            android:layout_width="@dimen/dp_150"
-            android:layout_height="@dimen/dp_150"
-            android:scaleType="fitXY"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -25,23 +22,52 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_5"
-            android:fontFamily="@font/dejavusans"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="100sp"
+            android:autoSizeStepGranularity="2sp"
+            android:fontFamily="@font/dejavusansbold"
             android:textColor="@color/black"
             android:textDirection="inherit"
-            android:textSize="@dimen/sp_10"
+            android:textSize="@dimen/sp_15"
             app:layout_constraintLeft_toRightOf="@id/cityImageView"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/ThreeDots" />
+
+        <ImageView
+            android:id="@+id/imgTOILOGO"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_margin="@dimen/dp_5"
+            android:src="@drawable/tio_logo"
+            app:layout_constraintStart_toEndOf="@id/cityImageView"
+            app:layout_constraintTop_toBottomOf="@id/cityTextView" />
 
         <TextView
             android:id="@+id/cityTextName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_5"
-            android:fontFamily="@font/dejavusansbold"
+            android:layout_margin="@dimen/dp_1"
+            android:fontFamily="@font/dejavusans"
             android:textColor="@color/black"
-            android:textSize="@dimen/sp_5"
-            app:layout_constraintLeft_toRightOf="@id/cityImageView"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintLeft_toRightOf="@id/imgTOILOGO"
             app:layout_constraintTop_toBottomOf="@id/cityTextView" />
+
+        <ImageView
+            android:id="@+id/ThreeDots"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@drawable/ic_more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

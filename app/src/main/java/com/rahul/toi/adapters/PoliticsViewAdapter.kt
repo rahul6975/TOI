@@ -29,6 +29,4 @@ class PoliticsViewAdapter(
     override fun getItemCount(): Int {
         return articlesPoliticsClass.size
     }
-
-
 }

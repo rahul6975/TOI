@@ -41,6 +41,14 @@
                 android:layout_marginTop="@dimen/dp_20"
                 android:src="@drawable/ic_menu" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_65"
+                android:layout_marginTop="@dimen/dp_25"
+                android:layout_toEndOf="@id/imgLogo"
+                android:src="@drawable/ic_more" />
+
         </RelativeLayout>
 
         <View
@@ -70,7 +78,6 @@
             app:menu="@menu/bottom_nav_menu" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"

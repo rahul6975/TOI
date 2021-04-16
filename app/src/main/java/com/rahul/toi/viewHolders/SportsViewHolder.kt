@@ -15,7 +15,7 @@ class SportsViewHolder(private val view: View, private val newsClickListener: Ne
         view.apply {
             Glide.with(cityImageView).load(articlesSportsClass.urlToImage).into(cityImageView)
             cityTextView.text = articlesSportsClass.title
-            cityTextName.text = articlesSportsClass.description
+            cityTextName.text = "Times Of India"
 
             CardView.setOnClickListener {
                 val position: Int = adapterPosition

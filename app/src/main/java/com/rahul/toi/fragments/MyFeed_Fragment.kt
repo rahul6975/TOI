@@ -68,7 +68,10 @@ class MyFeed_Fragment : Fragment(), NewsClickListener {
     }
 
     fun getApi() {
+
         var sportsApiService = Network.getInstance().create(SportsApiService::class.java)
+
+        FEED_PB.visibility = View.VISIBLE
 
         sportsApiService.getNews()
             .enqueue(object : Callback<ResponseSportsClass> {
@@ -86,13 +89,51 @@ class MyFeed_Fragment : Fragment(), NewsClickListener {
                         val linearLayoutManager = LinearLayoutManager(context)
                         FEED_RV.layoutManager = linearLayoutManager
                         FEED_RV.adapter = adapter
+                        FEED_PB.visibility = View.GONE
                     }
                 }
 
                 override fun onFailure(call: Call<ResponseSportsClass>, t: Throwable) {
+
                 }
 
             })
+
+        swipeToRefresh.setOnRefreshListener {
+
+            var sportsApiService = Network.getInstance().create(SportsApiService::class.java)
+
+            sportsApiService.getNews()
+                .enqueue(object : Callback<ResponseSportsClass> {
+                    override fun onResponse(
+                        call: Call<ResponseSportsClass>,
+                        response: Response<ResponseSportsClass>
+                    ) {
+                        if (response.body() != null) {
+                            responseSportsClass = response.body()!!
+                            val adapter =
+                                SportsViewAdapter(
+                                    responseSportsClass.articles as List<ArticlesSportsClass>,
+                                    this@MyFeed_Fragment
+                                )
+                            val linearLayoutManager = LinearLayoutManager(context)
+                            FEED_RV.layoutManager = linearLayoutManager
+                            FEED_RV.adapter = adapter
+                            FEED_PB.visibility = View.GONE
+                        }
+                    }
+
+                    override fun onFailure(call: Call<ResponseSportsClass>, t: Throwable) {
+
+                    }
+
+                })
+
+            swipeToRefresh.isRefreshing = false
+
+        }
+
+
     }
 
     override fun onClick(poisiton: Int) {
@@ -101,6 +142,5 @@ class MyFeed_Fragment : Fragment(), NewsClickListener {
         startActivity(intent)
 
     }
-
 
 }

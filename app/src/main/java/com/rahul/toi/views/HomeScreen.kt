@@ -59,20 +59,33 @@ class HomeScreen : AppCompatActivity() {
                     "home clicked",
                     Toast.LENGTH_SHORT
                 ).show()
-
+                R.id.nav_india -> {
+                    val intent2 = Intent(this, IndiaActivity::class.java);
+                    startActivity(intent2)
+                }
+                R.id.nav_tech -> {
+                    val intent2 = Intent(this, GadgetsActivity::class.java);
+                    startActivity(intent2)
+                }
+                R.id.nav_entertainment -> {
+                    val intent2 = Intent(this, EntertainmentActivity::class.java);
+                    startActivity(intent2)
+                }
+                R.id.nav_politics -> {
+                    val intent2 = Intent(this, PoliticsActivity::class.java);
+                    startActivity(intent2)
+                }
+                R.id.nav_business -> {
+                    val intent2 = Intent(this, BusinessActivity::class.java);
+                    startActivity(intent2)
+                }
+                R.id.nav_sports -> {
+                    val intent2 = Intent(this, SportsActivity::class.java);
+                    startActivity(intent2)
+                }
             }
             true
         }
-
-//        val appBarConfiguration = AppBarConfiguration(
-//            setOf(
-//                R.id.homeFragment,
-//                R.id.brief_Fragment,
-//                R.id.cityFragment,
-//                R.id.myFeed_Fragment,
-//                R.id.TOI_PlusFragment
-//            )
-//        )
 
         setHomescreenFragment()
         init()
@@ -119,6 +132,15 @@ class HomeScreen : AppCompatActivity() {
                     ).addToBackStack("myFeed").commit()
                     imgLogo.setImageResource(R.drawable.my_feeds_logo)
 
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.homeFragmentNav -> {
+                    val homeFragment = HomeFragment()
+                    val transaction = fragmentManager.beginTransaction()
+                    transaction.replace(R.id.flHomescreen, homeFragment, "homeFrag")
+                        .addToBackStack("HomeFrag")
+                        .commit()
+                    imgLogo.setImageResource(R.drawable.toi_black)
                     return@setOnNavigationItemSelectedListener true
                 }
                 else -> false

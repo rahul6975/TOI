@@ -1,63 +1,38 @@
-package com.rahul.toi.fragments.homeFragment
+package com.rahul.toi.views
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.rahul.toi.R
 import com.rahul.toi.adapters.PoliticsViewAdapter
 import com.rahul.toi.clickListeners.NewsClickListener
 import com.rahul.toi.interfaces.HealthApiService
-import com.rahul.toi.interfaces.TechnologyApiService
+import com.rahul.toi.interfaces.IndiaApiService
 import com.rahul.toi.model.ArticlesPoliticsClass
 import com.rahul.toi.model.ResponsePoliticsClass
 import com.rahul.toi.network.Network
-import com.rahul.toi.views.NewsDetails
-import kotlinx.android.synthetic.main.fragment_home__gadgets_now_.*
+import kotlinx.android.synthetic.main.activity_india.*
 import kotlinx.android.synthetic.main.fragment_home__t_o_i_.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class home_TOI_Fragment : Fragment(), NewsClickListener {
-
+class IndiaActivity : AppCompatActivity(), NewsClickListener {
     var responsePoliticsClass = ResponsePoliticsClass()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-        }
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home__t_o_i_, container, false)
-    }
-
-    companion object {
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            home_TOI_Fragment().apply {
-                arguments = Bundle().apply {
-                }
-            }
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        setContentView(R.layout.activity_india)
         getApi()
     }
 
     fun getApi() {
-        var healthApiService = Network.getInstance().create(HealthApiService::class.java)
+        var indiaApiService = Network.getInstance().create(IndiaApiService::class.java)
 
-        healthApiService.getNews()
+        indiaApiService.getNews()
             .enqueue(object : Callback<ResponsePoliticsClass> {
                 override fun onResponse(
                     call: Call<ResponsePoliticsClass>,
@@ -67,24 +42,28 @@ class home_TOI_Fragment : Fragment(), NewsClickListener {
                         responsePoliticsClass = response.body()!!
                         val adapter = PoliticsViewAdapter(
                             responsePoliticsClass.articles as List<ArticlesPoliticsClass>,
-                            this@home_TOI_Fragment
+                            this@IndiaActivity
                         )
-                        val linearLayoutManager = LinearLayoutManager(context)
-                        HealthRV.layoutManager = linearLayoutManager
-                        HealthRV.adapter = adapter
-                        HealthPB.visibility = View.GONE
+                        val linearLayoutManager = LinearLayoutManager(applicationContext)
+                        IndiaRV.layoutManager = linearLayoutManager
+                        IndiaRV.adapter = adapter
+                        IndiaPB.visibility = View.GONE
                     }
                 }
 
                 override fun onFailure(call: Call<ResponsePoliticsClass>, t: Throwable) {
                 }
             })
-
     }
 
     override fun onClick(poisiton: Int) {
-        val intent = Intent(context, NewsDetails::class.java)
+        val intent = Intent(this, NewsDetails::class.java)
         intent.putExtra("url", responsePoliticsClass.articles?.get(poisiton)!!.url)
         startActivity(intent)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
     }
 }

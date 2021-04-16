@@ -72,6 +72,7 @@ class CityFragment : Fragment(), NewsClickListener {
                         val linearLayoutManager = LinearLayoutManager(context)
                         CityRV.layoutManager = linearLayoutManager
                         CityRV.adapter = adapter
+                        City_frag_PB.visibility = View.GONE
                     }
                 }
 

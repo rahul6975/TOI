@@ -15,7 +15,7 @@ class PoliticsViewHolder(private val view: View, private val newsClickListener: 
         view.apply {
             Glide.with(cityImageView).load(articlesPoliticsClass.urlToImage).into(cityImageView)
             cityTextView.text = articlesPoliticsClass.title
-            cityTextName.text = articlesPoliticsClass.description
+            cityTextName.text = "Times Of India"
 
             CardView.setOnClickListener {
                 val position: Int = adapterPosition
