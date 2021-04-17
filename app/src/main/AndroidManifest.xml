@@ -11,8 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TOI"
-
         android:usesCleartextTraffic="true">
+        <activity android:name=".views.LoginActivity" />
+        <activity android:name=".views.EditProfile" />
+        <activity android:name=".views.Settings" />
         <activity android:name=".views.SportsActivity" />
         <activity android:name=".views.BusinessActivity" />
         <activity android:name=".views.PoliticsActivity" />

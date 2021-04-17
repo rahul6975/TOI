@@ -75,6 +75,11 @@ class city_bangalore_Fragment : Fragment(), NewsClickListener {
             }
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        getApi()
+    }
+
     fun getApi() {
         var politicsApiService =
             Network.getInstance().create(PoliticsApiService::class.java)

@@ -75,6 +75,11 @@ class city_Chennai_Fragment : Fragment(), NewsClickListener {
             }
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        getApi()
+    }
+
     fun getApi() {
         var sportsApiService = Network.getInstance().create(EntertainmentApiService::class.java)
 

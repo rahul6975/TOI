@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.TOI" parent="Theme.Design.NoActionBar">
+    <style name="Theme.TOI" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/red_color</item>
         <item name="colorPrimaryVariant">@color/white</item>

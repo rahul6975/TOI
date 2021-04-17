@@ -16,6 +16,7 @@ import com.rahul.toi.model.ResponsePoliticsClass
 import com.rahul.toi.network.Network
 import com.rahul.toi.views.NewsDetails
 import kotlinx.android.synthetic.main.activity_india.*
+import kotlinx.android.synthetic.main.fragment_brief__india_.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -94,9 +95,9 @@ class brief_India_Fragment : Fragment(), NewsClickListener {
                             this@brief_India_Fragment
                         )
                         val linearLayoutManager = LinearLayoutManager(context)
-                        IndiaRV.layoutManager = linearLayoutManager
-                        IndiaRV.adapter = adapter
-                        IndiaPB.visibility = View.GONE
+                        IndiaFragRV.layoutManager = linearLayoutManager
+                        IndiaFragRV.adapter = adapter
+                        IndiaFragPB.visibility = View.GONE
                     }
                 }
 
