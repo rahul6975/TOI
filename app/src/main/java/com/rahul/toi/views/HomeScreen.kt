@@ -1,4 +1,5 @@
 package com.rahul.toi.views
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,13 +20,14 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 import com.rahul.toi.R
-import com.rahul.toi.fragments.BriefsFragment.Brief_Fragment
+import com.rahul.toi.fragments.Brief_Fragment
 import com.rahul.toi.fragments.cityFragment.CityFragment
 import com.rahul.toi.fragments.MyFeed_Fragment
 import com.rahul.toi.fragments.TOI_PlusFragment.TOI_PlusFragment
 import com.rahul.toi.fragments.homeFragment.HomeFragment
 import kotlinx.android.synthetic.main.activity_home_screen.*
 import kotlinx.android.synthetic.main.toolbar_layout.*
+
 class HomeScreen : AppCompatActivity() {
     private lateinit var toggle: ActionBarDrawerToggle
     private lateinit var drawerLayout: DrawerLayout
@@ -79,6 +81,7 @@ class HomeScreen : AppCompatActivity() {
         setHomescreenFragment()
         init()
     }
+
     private fun init() {
         bottomNavigationView.setOnNavigationItemSelectedListener { item: MenuItem ->
             when (item.itemId) {
@@ -88,7 +91,7 @@ class HomeScreen : AppCompatActivity() {
                     transaction.replace(R.id.flHomescreen, cityFragment, "cityFrag")
                         .addToBackStack("cityFrag")
                         .commit()
-                    imgLogo.setImageResource(R.drawable.mumbai_city_logo)
+                    imgLogo.setImageResource(R.drawable.cities_logo)
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.TOI_PlusFragmentNav -> {
@@ -133,16 +136,19 @@ class HomeScreen : AppCompatActivity() {
             }
         }
     }
+
     private fun setHomescreenFragment() {
         val transaction = fragmentManager.beginTransaction()
         val homescreenFragement = HomeFragment()
         transaction.add(R.id.flHomescreen, homescreenFragement, "homescreen")
             .addToBackStack("homeScreen").commit()
     }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.toobar_menu, menu)
         return true
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.toolBar_Notification -> Toast.makeText(
