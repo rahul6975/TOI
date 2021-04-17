@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp_10"
+    android:elevation="@dimen/dp_10"
+    tools:context=".harsh.liveTvActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:autoPlay="false"
+            app:enableLiveVideoUi="true"
+            app:handleNetworkEvents="true"
+            app:showFullScreenButton="false"
+            app:useWebUi="false"
+            app:videoId="f0-Y-eMhS1A" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:autoPlay="false"
+            app:enableLiveVideoUi="true"
+            app:showFullScreenButton="true"
+            app:useWebUi="false"
+            app:videoId="ZY3kax-QaTc" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:autoPlay="false"
+            app:enableLiveVideoUi="true"
+            app:showFullScreenButton="true"
+            app:useWebUi="false"
+            app:videoId="WB-y7_ymPJ4" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

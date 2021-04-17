@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragmentNav"
+        android:fontFamily="@font/dejavusans"
+        android:icon="@drawable/home_icon"
+        android:title="Home" />
+    <item
+        android:id="@+id/cityFragmentNav"
+        android:fontFamily="@font/dejavusans"
+        android:icon="@drawable/ic_locate"
+        android:title="City" />
+    <item
+        android:id="@+id/TOI_PlusFragmentNav"
+        android:fontFamily="@font/dejavusans"
+        android:icon="@drawable/ic_plus_notification"
+        android:title="TOI+" />
+    <item
+        android:id="@+id/brief_FragmentNav"
+        android:fontFamily="@font/dejavusans"
+        android:icon="@drawable/ic_briefs"
+        android:title="Briefs" />
+    <item
+        android:id="@+id/myFeed_FragmentNav"
+        android:fontFamily="@font/dejavusans"
+        android:icon="@drawable/ic_my_feeds"
+        android:title="My Feed" />
+</menu>

@@ -35,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun signIn() {
         val signInIntent = mGoogleSignInClient!!.signInIntent
-        startActivityForResult(signInIntent, com.rahul.toi.views.)
+        startActivityForResult(signInIntent, com.rahul.toi.views)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

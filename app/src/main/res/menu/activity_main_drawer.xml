@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_saved_stories"
+            android:title="@string/Saved_stories" />
+
+        <item
+            android:id="@+id/nav_india"
+            android:title="@string/india" />
+
+        <item
+            android:id="@+id/nav_politics"
+            android:title="@string/politics" />
+
+        <item
+            android:id="@+id/nav_entertainment"
+            android:title="@string/entertainment" />
+
+        <item
+            android:id="@+id/nav_tech"
+            android:title="@string/tech" />
+
+        <item
+            android:id="@+id/nav_business"
+            android:title="@string/business" />
+
+        <item
+            android:id="@+id/nav_world"
+            android:title="@string/world" />
+
+        <item
+            android:id="@+id/nav_sports"
+            android:title="@string/sports" />
+
+        <item
+            android:id="@+id/nav_web_series"
+            android:title="@string/web_series" />
+
+        <item
+            android:id="@+id/nav_photos"
+            android:title="@string/photos" />
+
+        <item
+            android:id="@+id/nav_mumbai_city"
+            android:title="@string/mumbai_city" />
+
+        <item
+            android:id="@+id/nav_time_check"
+            android:title="@string/Times_Check" />
+
+        <item
+            android:id="@+id/nav_times_top_10"
+            android:title="@string/Times_Top_10" />
+
+        <item
+            android:id="@+id/nav_opinions_features"
+            android:title="@string/Opinions_features" />
+
+        <item
+            android:id="@+id/nav_podcasts"
+            android:title="@string/podcasts" />
+
+        <item
+            android:id="@+id/nav_movie_review"
+            android:title="@string/movie_review" />
+
+        <item
+            android:id="@+id/nav_tv"
+            android:title="@string/tv" />
+
+        <item
+            android:id="@+id/nav_lifestyle"
+            android:title="@string/lifestyle" />
+
+        <item
+            android:id="@+id/nav_opinion"
+            android:title="@string/opinion" />
+
+        <item
+            android:id="@+id/nav_cricket"
+            android:title="@string/cricket" />
+
+        <item
+            android:id="@+id/nav_auto"
+            android:title="@string/auto" />
+
+        <item
+            android:id="@+id/nav_social"
+            android:title="@string/social" />
+
+        <item
+            android:id="@+id/nav_pageants"
+            android:title="@string/pageants" />
+
+        <item
+            android:id="@+id/nav_gaming"
+            android:title="@string/gaming" />
+
+        <item
+            android:id="@+id/nav_event"
+            android:title="@string/event" />
+
+        <item
+            android:id="@+id/nav_humour"
+            android:title="@string/humour" />
+
+        <item
+            android:id="@+id/nav_science"
+            android:title="@string/science" />
+
+        <item
+            android:id="@+id/nav_education"
+            android:title="@string/education" />
+
+        <item
+            android:id="@+id/nav_environment"
+            android:title="@string/environment" />
+
+        <item
+            android:id="@+id/nav_infographics"
+            android:title="@string/infographics" />
+
+        <item
+            android:id="@+id/nav_citizen_reporter"
+            android:title="@string/citizen_reporter" />
+
+        <item
+            android:id="@+id/nav_good_governance"
+            android:title="@string/good_governance" />
+
+        <item
+            android:id="@+id/nav_nri"
+            android:title="@string/nri" />
+
+        <item
+            android:id="@+id/nav_campaign"
+            android:title="@string/campaign" />
+
+        <item
+            android:id="@+id/nav_mediaWire"
+            android:title="@string/mediawire" />
+
+        <item
+            android:id="@+id/nav_travel"
+            android:title="@string/Travel" />
+
+        <item
+            android:id="@+id/nav_food_recipe"
+            android:title="@string/food_recipe" />
+
+        <item
+            android:id="@+id/nav_femina"
+            android:title="@string/Femina" />
+
+        <item
+            android:id="@+id/nav_in_focus"
+            android:title="@string/In_focus" />
+
+
+    </group>
+
+
+</menu>

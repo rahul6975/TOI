@@ -10,17 +10,39 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+
         android:theme="@style/Theme.TOI">
+
         <activity android:name=".views.LoginActivity"></activity>
         <activity android:name=".views.EditProfile"></activity>
         <activity android:name=".views.Settings" />
-        <activity android:name=".MainActivity">
+
+
+        <activity android:name=".harsh.liveTvActivity"></activity>
+        android:theme="@style/Theme.TOI"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".views.SportsActivity"></activity>
+        <activity android:name=".views.BusinessActivity" />
+        <activity android:name=".views.PoliticsActivity" />
+        <activity android:name=".views.EntertainmentActivity" />
+        <activity android:name=".views.GadgetsActivity" />
+        <activity android:name=".views.IndiaActivity" />
+        <activity android:name=".views.NewsDetails" />
+
+        <activity android:name=".NavSavedStoriesActivity" />
+        <activity android:name=".views.MainActivity" />
+        <activity android:name=".views.HomeScreen" />
+
+        <activity android:name=".views.Splash_ScreenActivity">
+
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </>
     </application>
 
 </manifest>
