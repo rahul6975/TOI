@@ -1,4 +1,5 @@
 package com.rahul.toi.fragments
+
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -26,19 +27,22 @@ import kotlinx.android.synthetic.main.fragment_city.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-class Brief_Fragment : Fragment(), NewsClickListener {
+
+class Brief_Fragment : Fragment() {
     var responseTopHealines = ResponseTopHealines()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
         }
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_brief_, container, false)
     }
+
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
@@ -47,42 +51,13 @@ class Brief_Fragment : Fragment(), NewsClickListener {
                 }
             }
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        getApi()
-
         viewPager_of_briefsFragment.adapter =
             BriefFragmentAdapter(childFragmentManager)
         tabLayout_briefFragment.setupWithViewPager(viewPager_of_briefsFragment)
 
     }
-    fun getApi() {
-        var topNewsApiService = Network.getInstance().create(TopHeadlineApiService::class.java)
-        topNewsApiService.getNews()
-            .enqueue(object : Callback<ResponseTopHealines> {
-                override fun onResponse(
-                    call: Call<ResponseTopHealines>,
-                    response: Response<ResponseTopHealines>
-                ) {
-                    if (response.body() != null) {
-                        responseTopHealines = response.body()!!
-                        val adapter = TopHeadLinesViewAdapter(
-                            responseTopHealines.articles as List<ArticlesTopHealines>,
-                            this@Brief_Fragment
-                        )
-                        val linearLayoutManager = LinearLayoutManager(context)
-                        BriefRV.layoutManager = linearLayoutManager
-                        BriefRV.adapter = adapter
-                        brief_PB.visibility = View.GONE
-                    }
-                }
-                override fun onFailure(call: Call<ResponseTopHealines>, t: Throwable) {
-                }
-            })
-    }
-    override fun onClick(poisiton: Int) {
-        val intent = Intent(context, NewsDetails::class.java)
-        intent.putExtra("url", responseTopHealines.articles?.get(poisiton)!!.url)
-        startActivity(intent)
-    }
+
 }

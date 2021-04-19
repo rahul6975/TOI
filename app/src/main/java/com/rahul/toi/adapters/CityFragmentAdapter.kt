@@ -56,7 +56,7 @@ class CityFragmentAdapter(supportFragmentAdapter: FragmentManager) : FragmentPag
                 return "Chennai"
             }
             4 -> {
-                return "Bangalore"
+                return "Bengaluru"
             }
 
 

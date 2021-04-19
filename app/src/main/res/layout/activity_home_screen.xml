@@ -18,44 +18,39 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="720dp" />
 
-        <RelativeLayout
-            android:id="@+id/relativeLayout"
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/HomeToolbar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_60"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:id="@+id/imgLogo"
-                android:layout_width="@dimen/dp_200"
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
                 android:layout_height="@dimen/dp_60"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/dp_10"
-                android:src="@drawable/toi_black" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_20"
-                android:layout_marginTop="@dimen/dp_20"
-                android:src="@drawable/ic_menu" />
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:src="@drawable/toi_black" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_65"
-                android:layout_marginTop="@dimen/dp_25"
-                android:layout_toEndOf="@id/imgLogo"
-                android:src="@drawable/ic_more" />
-
-        </RelativeLayout>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_1"
             android:background="@color/black"
-            app:layout_constraintTop_toBottomOf="@id/relativeLayout" />
+            app:layout_constraintTop_toBottomOf="@id/HomeToolbar" />
 
         <FrameLayout
             android:id="@+id/flHomescreen"
@@ -64,7 +59,7 @@
             app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/relativeLayout" />
+            app:layout_constraintTop_toBottomOf="@id/HomeToolbar" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
@@ -84,12 +79,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-<<<<<<< HEAD
-        app:menu="@menu/activity_main_drawer"
-        app:headerLayout="@layout/nav_header"/>
-=======
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/activity_main_drawer" />
->>>>>>> 1212d7c790e5bd419fb277a73079658db7921e4c
 
 </androidx.drawerlayout.widget.DrawerLayout>

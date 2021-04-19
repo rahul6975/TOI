@@ -20,7 +20,6 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 import com.rahul.toi.R
 import com.rahul.toi.fragments.Brief_Fragment
-import com.rahul.toi.fragments.BriefsFragment.Brief_Fragment
 import com.rahul.toi.fragments.cityFragment.CityFragment
 import com.rahul.toi.fragments.MyFeed_Fragment
 import com.rahul.toi.fragments.TOI_PlusFragment.TOI_PlusFragment
@@ -40,6 +39,7 @@ class HomeScreen : AppCompatActivity() {
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
+        setSupportActionBar(HomeToolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_menu)
@@ -89,7 +89,7 @@ class HomeScreen : AppCompatActivity() {
                     transaction.replace(R.id.flHomescreen, cityFragment, "cityFrag")
                         .addToBackStack("cityFrag")
                         .commit()
-                    imgLogo.setImageResource(R.drawable.mumbai_city_logo)
+                    imgLogo.setImageResource(R.drawable.cities_logo)
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.TOI_PlusFragmentNav -> {
@@ -154,13 +154,11 @@ class HomeScreen : AppCompatActivity() {
             R.id.toolbar_changeLanguage -> Toast.makeText(
                 this,
                 "clicked on changeLanguage",
-                Toast.LENGTH_LONG).show()
-
-            R.id.toolbar_setting -> Toast.makeText(
-                this,
-                "clicked on Notification",
                 Toast.LENGTH_LONG
             ).show()
+            R.id.toolbar_setting -> {
+                startActivity(Intent(this, EditProfile::class.java))
+            }
             R.id.toolbar_search -> Toast.makeText(
                 this,
                 "clicked on Notification",
