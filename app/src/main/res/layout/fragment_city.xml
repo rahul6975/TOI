@@ -7,69 +7,52 @@
     tools:context=".fragments.cityFragment.CityFragment">
 
 
+    <!--    <com.google.android.material.tabs.TabLayout-->
+    <!--        android:id="@+id/tabLayout_cityFragment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:padding="5dp"-->
+    <!--        app:tabGravity="center"-->
+    <!--        app:tabMode="scrollable"-->
+    <!--        app:tabTextColor="#848484"-->
+    <!--        android:background="@android:color/transparent"-->
+    <!--        app:tabIndicatorColor="@color/red_color"-->
+    <!--        app:tabSelectedTextColor="@color/black"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:tabIndicatorHeight="@dimen/dp_10"/>-->
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout_cityFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:padding="5dp"
-        app:tabGravity="center"
-        app:tabMode="scrollable"
-        app:tabTextColor="#848484"
-        android:background="@android:color/transparent"
-        app:tabIndicatorColor="@color/red_color"
-        app:tabSelectedTextColor="@color/black"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:tabIndicatorHeight="@dimen/dp_10"/>
+    <!--    <androidx.viewpager.widget.ViewPager-->
+    <!--        android:id="@+id/viewPager_of_cityFragment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tabLayout_cityFragment"-->
+    <!--        android:layout_height="match_parent">-->
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager_of_cityFragment"
-        android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout_cityFragment"
-        android:layout_height="match_parent">
+    <!--    </androidx.viewpager.widget.ViewPager>-->
 
-    </androidx.viewpager.widget.ViewPager>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/CityRV"
-
-    <androidx.constraintlayout.widget.ConstraintLayout
->>>>>>> 1212d7c790e5bd419fb277a73079658db7921e4c
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/CityRV"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <ProgressBar
+        android:id="@+id/City_frag_PB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CityRV" />
 
 
-        <ProgressBar
-            android:id="@+id/City_frag_PB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/CityRV" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-<<<<<<< HEAD
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-=======
 </FrameLayout>
->>>>>>> 1212d7c790e5bd419fb277a73079658db7921e4c
+
 

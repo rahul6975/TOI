@@ -19,6 +19,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 import com.rahul.toi.R
+import com.rahul.toi.fragments.Brief_Fragment
 import com.rahul.toi.fragments.BriefsFragment.Brief_Fragment
 import com.rahul.toi.fragments.cityFragment.CityFragment
 import com.rahul.toi.fragments.MyFeed_Fragment
@@ -153,8 +154,8 @@ class HomeScreen : AppCompatActivity() {
             R.id.toolbar_changeLanguage -> Toast.makeText(
                 this,
                 "clicked on changeLanguage",
-                Toast.LENGTH_LONG
-            ).show()
+                Toast.LENGTH_LONG).show()
+
             R.id.toolbar_setting -> Toast.makeText(
                 this,
                 "clicked on Notification",

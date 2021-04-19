@@ -26,7 +26,7 @@ class BriefFragmentAdapter(supportFragmentAdapter: FragmentManager):FragmentPage
                 brief_entertainment_Fragment()
             }
             4 -> {
-                brief_tv_Fragment()
+                brief__tv_Fragmnet()
             }
             5 -> {
                 brief_lifestyle_Fragment()

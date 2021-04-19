@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-=======
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--=======-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
->>>>>>> 1212d7c790e5bd419fb277a73079658db7921e4c
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.BriefsFragment.Brief_Fragment">
+    tools:context=".fragments.BriefsFragment.">
 
-<<<<<<< HEAD
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout_briefFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:padding="5dp"
-        app:tabGravity="center"
-        app:tabMode="scrollable"
-        app:tabTextColor="#848484"
-        android:background="@android:color/transparent"
-        app:tabIndicatorColor="@color/red_color"
-        app:tabSelectedTextColor="@color/black"
-        app:tabIndicatorHeight="@dimen/dp_10"/>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager_of_briefsFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tabLayout_briefFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:padding="5dp"-->
+<!--        app:tabGravity="center"-->
+<!--        app:tabMode="scrollable"-->
+<!--        app:tabTextColor="#848484"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        app:tabIndicatorColor="@color/red_color"-->
+<!--        app:tabSelectedTextColor="@color/black"-->
+<!--        app:tabIndicatorHeight="@dimen/dp_10"/>-->
 
-=======
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/viewPager_of_briefsFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -59,6 +59,6 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> 1212d7c790e5bd419fb277a73079658db7921e4c
 
-</LinearLayout>
+
+</FrameLayout>
