@@ -19,7 +19,7 @@
         app:tabIndicatorHeight="@dimen/dp_5"
         app:tabMode="scrollable"
         app:tabSelectedTextColor="@color/black"
-        app:tabTextColor="#848484" />
+        app:tabTextColor="@color/black" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager_of_HomeFragment"

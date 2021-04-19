@@ -49,6 +49,9 @@ class EntertainmentActivity : AppCompatActivity(), NewsClickListener {
                         EnterRV.layoutManager = linearLayoutManager
                         EnterRV.adapter = adapter
                         EnterPB.visibility = View.GONE
+
+
+
                     }
                 }
 

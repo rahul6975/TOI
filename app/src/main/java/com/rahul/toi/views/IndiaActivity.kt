@@ -66,4 +66,5 @@ class IndiaActivity : AppCompatActivity(), NewsClickListener {
         super.onBackPressed()
         finish()
     }
+
 }

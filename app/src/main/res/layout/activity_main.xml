@@ -5,4 +5,11 @@
     android:layout_width="match_parent"
 
     android:layout_height="wrap_content"
+
     tools:context=".views.Settings">
+
+
+    tools:context=".views.MainActivity">
+
+</LinearLayout>
+

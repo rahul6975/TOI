@@ -21,33 +21,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:padding="@dimen/dp_10"
-            android:drawableStart="@drawable/ic_left_arrow"/>
+            android:drawableStart="@drawable/ic_left_arrow"
+            android:padding="@dimen/dp_10" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_60"
+            android:gravity="center_horizontal"
             android:text="@string/Saved_stories"
             android:textColor="@color/black"
-            android:layout_gravity="center"
             android:textSize="@dimen/sp_20"
-            android:gravity="center_horizontal"
-            android:layout_marginStart="@dimen/dp_60"
-            android:textStyle="bold"/>
-
+            android:textStyle="bold" />
 
     </LinearLayout>
-
-
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="parent">
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
 
     </com.google.android.material.tabs.TabLayout>
@@ -56,8 +52,8 @@
         android:id="@+id/viewPager_of_SaveStories"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout2"/>
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,4 +13,9 @@
     <color name="red_color">#FF0000</color>
     <color name="light_red">#ED5C5C</color>
 
+    <color name="button_green">#008000</color>
+
+    <color name="gray">#B8B4B4</color>
+
+
 </resources>

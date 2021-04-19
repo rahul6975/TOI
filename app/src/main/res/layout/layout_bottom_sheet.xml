@@ -1,34 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/bottomSheetContainer"
-    android:orientation="vertical"
-    android:background="@drawable/bottom_sheet_background"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical">
 
 
-
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="@dimen/dp_10"
-        android:layout_height="wrap_content">
+        android:gravity="center">
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/changeLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:padding="@dimen/dp_15"
+            android:layout_margin="@dimen/dp_10"
             android:text="CHANGE LANGUAGE"
             android:textColor="@color/black"
-            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_margin="@dimen/dp_10"
-            android:layout_height="wrap_content"/>
+            android:src="@drawable/ic_baseline_close_24" />
 
-    </LinearLayout>
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/changeLanguage"
+            android:layout_marginTop="@dimen/dp_10" />
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/changeLanguage"
+            android:layout_margin="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_30"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="5">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_background_green"
+                android:padding="@dimen/dp_5"
+                android:src="@color/white"
+                android:text="English"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@drawable/button_strip_green"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:src="@color/white"
+                android:text="hindi"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_strip_green"
+                android:padding="@dimen/dp_5"
+                android:src="@color/white"
+                android:text="Telugu"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_strip_green"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:src="@color/white"
+                android:text="Tamil"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_strip_green"
+                android:padding="@dimen/dp_5"
+                android:src="@color/white"
+                android:text="Malayalam"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_strip_green"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:src="@color/white"
+                android:text="Marathi"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_strip_green"
+                android:padding="@dimen/dp_5"
+                android:src="@color/white"
+                android:text="Gujarati"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_strip_green"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:src="@color/white"
+                android:text="Urdu"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_strip_green"
+                android:padding="@dimen/dp_5"
+                android:src="@color/white"
+                android:text="Punjabi"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_strip_green"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:src="@color/white"
+                android:text="Odia"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_strip_green"
+                android:padding="@dimen/dp_5"
+                android:src="@color/white"
+                android:text="Assamese"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/button_strip_green"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:src="@color/white"
+                android:text="Nepali"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
 
 
+        </GridLayout>
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/changeLanguage"
+            android:layout_marginTop="@dimen/dp_10" />
 
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="Save MY Preference"
+            android:textAllCaps="true"
+            android:textColor="@color/red_color"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
 
 
-</LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -35,5 +35,14 @@
     <style name="Theme.TOI.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TOI.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+
+        
+    </style>
+    
+    
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal"/>
 
 </resources>

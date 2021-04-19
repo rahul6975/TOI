@@ -2,4 +2,5 @@
 <resources>
     <dimen name="dp_500">500dp</dimen>
     <dimen name="dp_400">400dp</dimen>
+    <dimen name="dp_300">300dp</dimen>
 </resources>
