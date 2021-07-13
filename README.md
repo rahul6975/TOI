@@ -1,2 +1,2 @@
-# TOI
-Clone of a popular Android News Application.
+# Clone of a popular Android News Application
+
