@@ -1,5 +1,5 @@
 # Times Of India Clone
-#### TIO App is a online news app where user can read/save latest trending news around the world.
+#### TOI is an online news app where user can read/save latest trending news around the world.
 
 ## Screenshots
 
